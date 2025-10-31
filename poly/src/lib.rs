@@ -1,5 +1,7 @@
 //! This crate implements functions for manipulating polynomials over finite
 //! fields, including FFTs.
+#![cfg_attr(coverage_nightly, feature(coverage_attribute))]
+#![cfg_attr(coverage_nightly, coverage(off))]
 #![cfg_attr(not(feature = "std"), no_std)]
 #![forbid(unsafe_code)]
 #![allow(clippy::suspicious_op_assign_impl, clippy::suspicious_arithmetic_impl)]
